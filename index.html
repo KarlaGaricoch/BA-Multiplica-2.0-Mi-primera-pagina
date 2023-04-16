@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi primera pagina</title>
+    <meta name="author" content="karla">
+    <meta name="keywords" content= "consulta, nutricion, formulario">
+    <meta http-equiv="refresh" content="5">
+    <meta http-equiv="cookie" content="user=karla">
+    <style>
+        body{background-color: rgb(234, 249, 135);}
+    </style>
+    
+    
+</head>
+
+<body>
+    <h1>Formulario de consulta</h1>
+    <h2>Karla Garicoch</h2>
+    <img src="consulta.webp" width="400" height="250"/> 
+    <hr>
+   <span style="color: brown;" <h3>Datos personales.</h3> </span>
+   
+    <form action="envio.php" method="post" target="_blank">
+        <label for="Nombre y apellido">Ingrese su nombre y apellido.</label>
+        <input type="text" id="nombre y apellido" size="tamaño" name="nombre y apellido" placeholder="Ingrese sus datos">
+        <br>
+    <label for="edad">Ingrese su edad</label>
+    <input type="number" id="Edad" size="tamaño" name="Edad">
+    <br>
+    <label for="DNI">Ingrese su DNI</label>
+    <input type="text" id="DNI" size="tamaño" name="DNI" required>
+    <small>Este campo es obligatorio.</small>
+    <br>
+    <label for="numero">Telefono</label>
+    <input type="tel" id="numero" size="tamaño" name="numero" placeholder="1128692760" minlength="10" max="6">
+    <br>
+    <label for="e-mail">E-MAIL</label>
+    <input type="email" id="email" size="tamaño" name="e-mail">
+    <br>
+    <label for="Estado">Estado civil</label>
+    <select name="Estado" id="Estado">
+        <option value="Soltero">Soltero</option>
+        <option value="Casado">Casado</option>
+        <option value="Viudo">Viudo</option>
+    </select>
+    <h4>Consulta</h4>
+    <p>La consulta tiene un valor de $7000, si usted cuenta con obra social, abajo le dejamos algunos datos a completar y la fecha y horario de consulta que desea ser atentido.
+        <br>
+        Muchas gracias!
+    </p>
+    <br>
+    <label for="Obra social">¿Cuenta con obra social?</label>
+    <br>
+    <input type="radio" name="obra social" value="Si"> Si
+    <br>
+    <input type="radio" name="obra social" value="No"> No
+    <br>
+    <br>
+    <label for="obra social option">Obras Sociales</label>
+    <select name="Obra social option" id="Os">
+        <optgroup label= "Provincial.">
+        <option value="Medicab">Medicab</option>
+        <option value="ACLISA">ACLISA</option>
+        <option value="SAMA">SAMA</option>
+    </optgroup>
+        <optgroup label="Nacionales">
+        <option value="OSPA">OSPA</option>
+        <option value="OSDE">OSDE</option>
+        <option value="OSPJN">OSPJN</option>
+    </optgroup>
+    <option value="Otra">Otra</option>
+    </select>
+    <br>
+    <br>
+    <label for="">Tengo otra O.S:</label>
+    <input type="text"id="Otra OS" name="otra O.S">
+    <br>
+    <br>
+    <label for="archivo">Ingrese una imagen de su carnet de afiliado</label>
+    <input type="file" id="archivo" size="tamaño" name="archivo" value="file">
+    <br>
+    <br>
+    <label for="numero de afiliado"> En caso de no tener a disposicion su carnet, puede ingresar su numero de afiliado.</label>
+    <input type="password" id="password" name="numero de afiliado" placeholder="Ingrese su numero de afiliado">
+    <br>
+    <label for="fecha">Dia de la consulta</label>
+    <input type="date" id="fecha" name="fecha" max="2023-12-18" min="2023-01-18">
+    <br>
+    <label for="Horario">Horario de la consulta</label>
+    <input type="time" id="time" name="horario">
+    <br>
+    <br>
+    <label for="opinion">¿Tiene alguna consulta antes de solicitar un turno?</label>
+    <textarea type="file" id="opinion" size="tamaño" name="opinion" placeholder="Ingrese aqui su duda." rows="5" cols="25"></textarea>
+    <br>
+    <br>
+    <input type="submit" value="Enviar tu consulta.">
+    <br>
+    <br>
+    <input type="submit" value="Enviar los datos">
+    <br>
+    <input type="reset" value="Borrar todo">
+    <br>
+    <br>
+    <br>
+    <input type="button" onclick="alert ('Gracias por decidir cambiar tus habilitos!')" value="Agradecimiento">
+
+
+</form>
+
+</body>
+</html>
